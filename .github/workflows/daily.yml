@@ -1,0 +1,26 @@
+name: daily
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "55 16,20,0,4 * * *"
+  push:
+    branches: [ main ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+
+      - name: run
+        run: |
+          go run ./ r -j ${{ secrets.SERVERJIANG_TOKEN }} -d ${{ secrets.DINGTALK_TOKEN }} -c ./rssCfgSample/rss.json
+
+

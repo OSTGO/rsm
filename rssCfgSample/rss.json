@@ -1,0 +1,11 @@
+{
+  "rssList": {
+    "longTao的博客": "https://longtao.fun/atom.xml",
+    "b站频道": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/bilibili/partion/33",
+    "知乎日报": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/zhihu/daily",
+    "MIT课程": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/mit/ocw-top",
+    "最近24小时地震": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/earthquake/ceic/1",
+    "上海气象预警": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/weatheralarm/上海市",
+    "中国政府数据": "https://rsshub-repo-en14l9n9j-eust-w.vercel.app/gov/shuju/shengzhu/baitiaorou"
+  }
+}
