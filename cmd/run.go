@@ -20,7 +20,14 @@ var runCmd = &cobra.Command{
 	Use:     "run",
 	Aliases: []string{"r", "ru", "R", "RU", "RUN"},
 	Short:   "run rsm",
-	Long:    "- `-c,--cfg [rssConfig list]` defaults to `rss.json`, you can specify the configuration file, the configuration file defaults to `rss.json`, you can customize the configuration name, supports the following formats `.toml` ` .yaml` `.toml` `hcl` etc.\n- `-p,--page [generate html address list]` defaults to rss.html, you can specify the file name to copy\n- `-s,--server [port]` can specify the UI interface for starting the server, online preview and addition, deletion, modification and checking.\n- `-d,--ding [dingTalkHookPath list]` Dingding sending address\n- `-t,--telegram [telegramHookPath list]` can specify the telegram receiving address\n- `-j,--jiang [serverJiangHookPath list]` can specify the server sauce address, and then push WeChat and other places\n- `-m,--manbu [manbuHookPath list]` can specify the receiving address of the `Walking Technology Life` public account, follow the public account to receive messages\n- `-g,--gapTime [time interval to get, default 24 hours]` specifies how many hours before the current start, todo: any time range",
+	Long: "`-c,--cfg [rssConfig list]` defaults to `rss.json`, you can specify the configuration file, the configuration file defaults to `rss.json`, you can customize the configuration name, supports the following formats `.toml` ` .yaml` `.toml` `hcl` etc." +
+		"`-p,--page [generate html address list]` defaults to rss.html, you can specify the file name to copy" +
+		"`-s,--server [port]` can specify the UI interface for starting the server, online preview and addition, deletion, modification and checking." +
+		"`-d,--ding [dingTalkHookPath list]` Dingding sending address" +
+		"`-t,--telegram [telegramHookPath list]` can specify the telegram receiving address" +
+		"`-j,--jiang [serverJiangHookPath list]` can specify the server sauce address, and then push WeChat and other places" +
+		"`-m,--manbu [manbuHookPath list]` can specify the receiving address of the `Walking Technology Life` public account, follow the public account to receive messages" +
+		"`-g,--gapTime [time interval to get, default 24 hours]` specifies how many hours before the current start, todo: any time range",
 	Run: func(cmd *cobra.Command, args []string) {
 		op := operate.RssCfgMap{}
 		op.MergeCfgFile(rssCfgFiles...)

@@ -30,15 +30,11 @@ var rssCfgFiles []string
 var defaultRssCfgFiles = []string{"rss.yaml"}
 
 var rootCmd = &cobra.Command{
-	Use:       "mrs",
-	Short:     "A brief description of your application",
+	Use:       "rsm",
+	Short:     "RSS master help u get a better life experience",
 	ValidArgs: []string{"run", "add", "help", "list", "merge", "delete"},
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Long: `If you have good suggestions, or found bugs, please contact: eustancewu@gmail.com
+Or submit an issue: https://github.com/OSTGO/rsm/issues/new/choose`,
 }
 
 func Execute() {

@@ -10,8 +10,8 @@ var listCmd = &cobra.Command{
 	Aliases: []string{"l", "LIST", "List", "L"},
 	Short:   "Show RSS subscription records",
 	Long: `Show RSS subscription records,for example:
-			rsm list -c ./config1.json,/etc/config2.yaml,~/temp/config3.toml
-			[cfg]are not required parameters, default rss cfg file is ./rss.yaml`,
+rsm list -c ./config1.json,/etc/config2.yaml,~/temp/config3.toml
+[cfg]are not required parameters, default rss cfg file is ./rss.yaml`,
 	Run: func(cmd *cobra.Command, args []string) {
 		op := operate.RssCfgMap{}
 		op.MergeCfgFile(rssCfgFiles...)
