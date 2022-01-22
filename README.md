@@ -28,8 +28,11 @@ list:
 
 # Install :package:
 
-Download the version that works for u [Mac-amd64](!mac)|[Windows-amd64](!win)|[linux-arm](!l)|[linux-amd64](!l)
-|[linux-x86-32bit](!l)|
+Download the version that works for u
+[Mac-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-mac-amd64)
+[Windows-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-win-amd64.exe)
+[linux-arm](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-arm64)
+[linux-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-amd64)
 
 # Deploy :rocket:
 

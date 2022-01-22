@@ -33,6 +33,6 @@ jobs:
             pkg/rsm-linux-amd64
             pkg/rsm-linux-arm64
             pkg/rsm-mac-amd64
-            pkg/rsm-win-amd64
+            pkg/rsm-win-amd64.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
