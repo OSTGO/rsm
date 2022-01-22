@@ -20,7 +20,7 @@ jobs:
         run: sudo apt install upx -y
 
       - name: build elf
-        run: mkdir pkg;cd builders;./build-all.sh
+        run: mkdir pkg;cd builders;chmod +x ./*.sh;./build-all.sh
 
       - name: build rpm
         run: ls ./pkg
