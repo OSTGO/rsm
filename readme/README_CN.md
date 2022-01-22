@@ -2,7 +2,7 @@
 
 # rsm :sparkles:
 
-rsm 是一个RSS订阅工具，你可以免费且轻松的使用
+RSS master[rsm], RSS大师 是一个RSS订阅工具，你可以免费且轻松的使用
 
 # 如何启动 :helicopter:
 
@@ -47,17 +47,3 @@ github action 部署
 # 许可证
 
 本项目遵循GPL许可，您可以免费的使用和传播，但不可用于商业目的。
-
-- `-c,--cfg [rssConfig list]` defaults to `rss.json`, you can specify the configuration file, the configuration file
-  defaults to `rss.json`, you can customize the configuration name, supports the following
-  formats `.toml` ` .yaml` `.toml` `hcl` etc.
-- `-p,--page [generate html address list]` defaults to rss.html, you can specify the file name to copy
-- `-s,--server [port]` can specify the UI interface for starting the server, online preview and addition, deletion,
-  modification and checking.
-- `-d,--ding [dingTalkHookPath list]` Dingding sending address
-- `-t,--telegram [telegramHookPath list]` can specify the telegram receiving address
-- `-j,--jiang [serverJiangHookPath list]` can specify the server sauce address, and then push WeChat and other places
-- `-m,--manbu [manbuHookPath list]` can specify the receiving address of the `Walking Technology Life` public account,
-  follow the public account to receive messages
-- `-g,--gapTime [time interval to get, default 24 hours]` specifies how many hours before the current start, todo: any
-  time range

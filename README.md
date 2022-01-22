@@ -2,29 +2,37 @@
 
 # rsm :sparkles:
 
-rsm is an RSS subscription function aggregation tool, You can use it easily!
+RSS master[rsm] is a RSS subscription function aggregation tool, You can use it easily!
 
 # How to start？ :helicopter:
 
-run command `rsm run`
-here is optionals
+Start rsm with `rsm run`
 
-- `-d,--ding [dingTalkHookPath]` 钉钉发送地址
-- `-r,--rss [rssConfig]`默认为`rss.json`，可指定配置文件
-- `-h,--html [生成html地址]`默认为out.html,可指定文件名复制
-- `-s,--server [port]`可指定启动server可以在线预览以及增删改查什么的UI界面
-- `-t,--telegram [telegramHookPath]` 可指定telegram接收地址
+- `-c,--cfg [rssConfig list]` defaults to `rss.json`, you can specify the configuration file, the configuration file
+  defaults to `rss.json`, you can customize the configuration name, supports the following
+  formats `.toml` ` .yaml` `.toml` `hcl` etc.
+- `-p,--page [generate html address list]` defaults to rss.html, you can specify the file name to copy
+- `-s,--server [port]` can specify the UI interface for starting the server, online preview and addition, deletion,
+  modification and checking.
+- `-d,--ding [dingTalkHookPath list]` Dingding sending address
+- `-t,--telegram [telegramHookPath list]` can specify the telegram receiving address
+- `-j,--jiang [serverJiangHookPath list]` can specify the server sauce address, and then push WeChat and other places
+- `-m,--manbu [manbuHookPath list]` can specify the receiving address of the `Walking Technology Life` public account,
+  follow the public account to receive messages
+- `-g,--gapTime [time interval to get, default 24 hours]` specifies how many hours before the current start, todo: any
+  time range
 
 # How to operate rss List :fuelpump:
 
-you can directly change `rss.json` or create json file follow the same format; u can also use this command to amend rss
-list:
-`rsm list` show rss name list
-`rsm add -n [name] -p [path]` add rss
-`rsm remove [name]` remove rss by name
-``
-``
-``
+You can modify the `rss.json` file directly, or you can customize the json subscription list and
+use `-c,--cfg [rssConfig]` to specify the subscription list you want to use at startup
+
+You can also manipulate the subscription list with the following commands
+
+`rsm list -c [rssConfig]` displays a list of subscriptions
+`rsm add -n [name] -u [url] -c [rssConfig]` add subscription
+`rsm delete -n [name list] -c [rssConfig]` delete subscription
+`rsm merge -c [merged rssConfig list] -o [merged rssConfig]` merge subscription list files
 
 # Install :package:
 
@@ -49,6 +57,3 @@ use GPL license
 []UI interaction to increase rss
 []Subscribe rss by email
 []Rss to mail
-[]Push rss to telegram
-[]Push rss to WeChat
-[]Beautify UI display
