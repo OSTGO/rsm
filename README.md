@@ -29,28 +29,39 @@ use `-c,--cfg [rssConfig]` to specify the subscription list you want to use at s
 
 You can also manipulate the subscription list with the following commands
 
-`rsm list -c [rssConfig]` displays a list of subscriptions
-`rsm add -n [name] -u [url] -c [rssConfig]` add subscription
-`rsm delete -n [name list] -c [rssConfig]` delete subscription
-`rsm merge -c [merged rssConfig list] -o [merged rssConfig]` merge subscription list files
+- `rsm list -c [rssConfig]` displays a list of subscriptions
+- `rsm add -n [name] -u [url] -c [rssConfig]` add subscription
+- `rsm delete -n [name list] -c [rssConfig]` delete subscription
+- `rsm merge -c [merged rssConfig list] -o [merged rssConfig]` merge subscription list files
 
 # Install :package:
 
 Download the version that works for u
-[Mac-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-mac-amd64)
-[Windows-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-win-amd64.exe)
-[linux-arm](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-arm64)
-[linux-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-amd64)
+
+- [Mac-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-mac-amd64)
+- [Windows-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-win-amd64.exe)
+- [linux-arm](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-arm64)
+- [linux-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-amd64)
 
 # Deploy :rocket:
 
-deploy by local
+## local deployment
 
-deploy by github
+Download the executable file to the deployment server and set it to run regularly
+
+## github action deployment
+
+Clone this repo, modify the subscription list, and modify the startup parameters in daily.yaml
+
+DingTalk example:
+![dingTalkSample](https://gcore.jsdelivr.net/gh/Longtao-W/pics@main/rsm/dingTalkSample.jpg)
+
+Example of server sauce:
+![serverJiangSample](https://gcore.jsdelivr.net/gh/Longtao-W/pics@main/rsm/serverJiangSample.jpg)
 
 # license
 
-use GPL license
+Use GPL license
 
 # Todo list :clipboard:
 

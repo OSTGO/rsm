@@ -23,26 +23,37 @@ RSS master[rsm], RSS大师 是一个RSS订阅工具，你可以免费且轻松�
 
 你也可以使用以下命令操作订阅列表
 
-`rsm list -c [rssConfig]` 显示订阅列表
-`rsm add -n [name] -u [url] -c [rssConfig]` 增加订阅
-`rsm delete -n [name列表] -c [rssConfig]` 删除订阅
-`rsm merge -c [被合并的rssConfig列表] -o [合并后的的rssConfig]` 合并订阅列表文件
+- `rsm list -c [rssConfig]` 显示订阅列表
+- `rsm add -n [name] -u [url] -c [rssConfig]` 增加订阅
+- `rsm delete -n [name列表] -c [rssConfig]` 删除订阅
+- `rsm merge -c [被合并的rssConfig列表] -o [合并后的的rssConfig]` 合并订阅列表文件
 
 # 安装 :package:
 
 在此下载适用于你的版本
-[Mac-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-mac-amd64)
-[Windows-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-win-amd64.exe)
-[linux-arm](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-arm64)
-[linux-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-amd64)
+
+- [Mac-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-mac-amd64)
+- [Windows-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-win-amd64.exe)
+- [linux-arm](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-arm64)
+- [linux-amd64](https://github.com/metaRSS/rsm/releases/download/v/rsm-linux-amd64)
 
 如果你需要特殊版本，请下载本repo自行编译
 
 # 定时任务部署 :rocket:
 
-本地部署
+## 本地部署
 
-github action 部署
+下载可执行文件到部署服务器中,设置定时运行
+
+## github action 部署
+
+克隆本repo,修改订阅列表,修改daily.yaml中的启动参数
+
+钉钉示例:
+![dingTalkSample](https://gcore.jsdelivr.net/gh/Longtao-W/pics@main/rsm/dingTalkSample.jpg)
+
+server酱示例:
+![serverJiangSample](https://gcore.jsdelivr.net/gh/Longtao-W/pics@main/rsm/serverJiangSample.jpg)
 
 # 许可证
 
