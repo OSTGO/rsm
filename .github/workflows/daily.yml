@@ -3,7 +3,7 @@ name: daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "55 16,20,0,4 * * *"
+    - cron: "0 1,5,9 * * *"
   push:
     branches: [ main ]
 
